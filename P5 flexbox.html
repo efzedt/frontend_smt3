@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      :root {
+        --container-bg: #ffffff;
+        --primary-text: #1a1a1a;
+        --secondary-text: #6b7280;
+        --dark-button: #111827;
+        --dark-button-text: #ffffff;
+        --border-color: #e5e7eb;
+        --input-bg: #f9fafb;
+        --visual-panel-bg: #111827;
+        --font-family: "Poppins", sans-serif;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--font-family);
+        background-color: #f0f2f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 1rem;
+        color: var(--primary-text);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .background-overlay {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        right: -50px;
+        bottom: -50px;
+        z-index: -1;
+        background-image: url("../Downloads/skyscrapers-9596809.jpg");
+        background-size: cover;
+        background-position: center;
+        filter: blur(20px) brightness(0.9);
+      }
+
+      .container-box {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 15px;
+        padding: 20px;
+        width: 33%;
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      .card-content {
+        padding: 15px;
+      }
+      .card-content h3 {
+        margin: 0;
+        font-size: 18px;
+        color: #333;
+      }
+      .card-content p {
+        font-size: 14px;
+        color: #666;
+        margin-top: 8px;
+      }
+
+      @media (max-width: 900px) {
+        .login-container {
+          flex-direction: column;
+          width: 95%;
+          max-width: 450px;
+          margin: 2rem 0;
+        }
+
+        .login-form-panel {
+          flex-basis: auto;
+          padding: 2rem;
+        }
+
+        .login-visual-panel {
+          flex-basis: auto;
+          min-height: 250px;
+        }
+
+        .form-content {
+          max-width: 100%;
+        }
+
+        .form-options {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-overlay"></div>
+
+    <div class="container-box">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1644456654239-3c036c0c28fe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1546"
+        />
+        <div class="card-content">
+          <h3>Motivated</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam,
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1644329901831-1334e813c6bd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+        />
+        <div class="card-content">
+          <h3>Educated</h3>
+          <p>Lorem 500 dolor sit amet consectetur adipisicing elit. Ullam</p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1603530657796-cf3b12aa9e5c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1740"
+        />
+        <div class="card-content">
+          <h3>Inspired</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
